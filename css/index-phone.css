@@ -1,0 +1,285 @@
+
+
+body{
+  position: relative;
+  margin: 0;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.website-logo{
+  position: fixed;
+  z-index: 10;
+  left: 40px;
+  top: 40px;
+  width: 130px;
+}
+
+.feedback-btn{
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  background-color: #ffffff;
+  padding: 20px 40px;
+  border-radius: 50px;
+  text-align: center;
+  z-index: 10;
+}
+
+.feedback-btn p{
+  color: #000000;
+  font-size: 40px;
+  font-weight: bold;
+  display: inline;
+}
+
+.banner{
+  display: flex;
+  flex-flow: column;
+  width:100%;
+}
+
+.page{
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  width:100%;
+  height: 1800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.page a{
+  z-index: 2;
+}
+
+.check{
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.6;
+}
+
+.check p {
+  text-shadow: 0 0 10px rgb(0,0,0,0.3);
+  color: #ffffff;
+  font-size: 40px;
+  margin: 0 0 0 5px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  line-height: 18px;
+  letter-spacing: 5px;
+}
+
+.check span{
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #ffffff;
+}
+
+.maskup{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  z-index: -0;
+  opacity: 0.3;
+  transition: opacity 0.5s;
+}
+
+.displayinfo{
+  z-index: 2;
+  display: flex;
+  padding: 40px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.download{
+  padding: 35px 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+.download p{
+  font-size: 40px;
+  display: inline;
+  color: #000000;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.title{
+  flex-flow: column;
+  display: flex;
+
+}
+
+.title p {
+  color: #ffffff;
+  text-shadow: 0 0 20px rgb(0,0,0,0.5);
+  transition: text-shadow 0.5s;
+}
+
+.title p:nth-child(1){
+  margin: 0;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.title p:nth-child(2){
+  margin: 0;
+  font-size: 50px;
+  font-weight: bold;
+  color: #fcd02f;
+}
+
+
+.page:nth-child(1){
+  background-image: url(../img/mobile/img4.jpg);
+}
+
+.page:nth-child(2){
+  background-image: url(../img/mobile/img2.jpg);
+}
+
+.page:nth-child(3){
+  background-image: url(../img/mobile/img5.jpg);
+}
+
+.page:nth-child(4){
+  background-image: url(../img/mobile/img3.jpg);
+}
+
+.feedback_background{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgb(0,0,0,0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+
+  display: none;
+}
+
+.feedback{
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  padding: 40px;
+  transform:translateX(-50%) translateY(-50%);
+  position: fixed;
+  z-index: 999;
+  border-radius: 15px;
+  display: none;
+}
+
+.feedback p{
+  margin-right: 20px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.feedback select{
+  height: 80px;
+  width: 200px;
+  border: 0px ;
+  padding: 0 20px;
+  font-size: 30px;
+  border-radius: 20px;
+  background-color: #f7f7f7;
+}
+
+.feedback .theme-nameandversion {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.feedback .theme-nameandversion > div{
+  display: flex;
+  align-items: center;
+}
+
+.feedback .theme-version{
+  margin-left: 50px;
+}
+
+.feedback .feedback-context textarea{
+  border: 0px;
+  width: 100%;
+  height: 500px;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  font-size: 30px;
+  resize: none;
+}
+
+.feedback .btnarea{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feedback .btnarea div{
+  font-size: 30px;
+  font-weight: bold;
+  padding: 30px 50px;
+  border-radius: 20px;
+  background-color: #f7f7f7;
+  transition: background-color 0.3s;
+}
+
+.feedback .btnarea div:nth-child(1){
+  color: #ff4b4b;
+}
+
+.feedback .btnarea div:hover{
+  background-color: #dbdbdb;
+  cursor: pointer;
+}
+
+.howtocheckversion{
+  margin-left: 20px;
+}
+
+.howtocheckversion svg{
+  width: 50px;
+  height: 50px;
+}
+
+.howtocheckversion{
+  cursor: pointer;
+}
+
+.howtocheckversion:hover .alert{
+  display: block;
+}
+
+.alert{
+  display: none;
+  position: absolute;
+  top: 175px;
+  right: 50px;
+  font-size: 30px;
+  box-shadow: 0 0 20px rgb(0,0,0,0.1);
+  border-radius: 20px;
+  background: #ffffff;
+  padding: 15px 20px;
+}

@@ -1,0 +1,32 @@
+body{
+  margin: 40px;
+}
+
+.theme-nameandversion{
+  display: flex;
+}
+
+.theme-nameandversion div{
+  display: flex;
+  align-items: center;
+}
+
+.theme-nameandversion div select{
+  height: 50px;
+  width: 200px;
+  padding: 0 10px;
+  background-color: f0f0f0;
+  border: 0px solid;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+
+.theme-nameandversion p{
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.theme-version{
+  margin-left: 50px;
+}
